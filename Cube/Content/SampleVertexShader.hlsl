@@ -44,23 +44,19 @@ PixelShaderInput main(VertexShaderInput input)
 	PixelShaderInput output;
 	
 	float4 pos = float4(input.pos, 1.0f);
-	float4 light = float4(vec_light.xyz, 1.0f);
-	output.viewPos = viewPos.xyz;
 	// Transform the vertex position into projected space.
-	pos = mul(pos, model);
-	pos = mul(pos, view);
-	pos = mul(pos, projection);
+	float4x4 transform = mul(model, view);
+	transform = mul(transform, projection);
+	output.viewPos = viewPos.xyz;
+	pos = mul(pos, transform);
 	output.pos = pos;
 	output.pos1 = pos;
 
-	light = mul(light, model);
-	light = mul(light, view);
-	light = mul(light, projection);
-	output.light = light;
-	output.normal = input.normal;
+	output.light = vec_light;
+	output.normal = mul(input.normal, transform);
 	// Pass the color through without modification.
 	output.color = float3(1.0f, 1.0f, 1.0f);		// Color of figure
-	output.lightColor = float3(1.0f, 1.0f, 1.0f);	//light color
+	output.lightColor = float3(0.7f, 0.3f, 0.7f);	//light color
 	
 	return output;
 }

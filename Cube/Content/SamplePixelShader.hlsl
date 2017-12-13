@@ -12,28 +12,37 @@ struct PixelShaderInput
 	float3 lightColor : COLOR1;
 };
 
+float cossin(float3 A, float3 B)
+{
+	float cos = dot(A, B) / (length(A) * length(B));
+	return cos;
+}
+
 /**
 @brief A pass-through function for the (interpolated) color data.
 */
 float4 main(PixelShaderInput input) : SV_TARGET
 {
 	//Ambient
-	float ambientStrength = 0.6f;	// Сила фонового освітлення
-	float3 ambient = ambientStrength * input.lightColor;
-	
-	//Diffuse
-	float3 norm = normalize(input.normal);	//нормаль нормалізована
-	float3 lightDir = normalize(input.light - input.pos1);	//Напрямок світла
-	float diff = max(dot(norm, lightDir), 0.0);	//коефіцієнт освітлення
-	float3 diffuse = 0.5f * diff * input.lightColor;
+	float Ka = 0.5f;
+	float ambient = Ka;
 
-	//Specular
-	float specularStrength = 0.1f;	//сила відблиску
-	float3 viewDir = normalize(input.viewPos);	//вектор погляду
-	float3 reflectDir = reflect(-lightDir, norm);
-	float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);	// 32 - ступінь "зібраності" плями відблиску
-	float3 specular = specularStrength * spec * input.lightColor;
+	//Diffuse
+	float Kd = 0.8f;
+	float3 N = -normalize(input.normal);
+	float3 L = -normalize(input.light.xyz - input.pos1.xyz);
+	float diffuse = Kd * (cossin(N, L));
 	
-	float3 result = input.color * (ambient + diffuse + specular);
+	//Specular
+	float Ks = 0.7f;
+	float Ns = 1.0f;
+	float3 R = normalize(reflect(L, N));
+	float3 V = normalize(float3(input.viewPos.xyz - input.pos1.xyz));
+	float specular = Ks * pow(cossin(R, V), Ns);
+
+	float amp = 0.5f;
+	float intensity = ambient + amp * (diffuse + specular);
+
+	float3 result = input.color * intensity * input.lightColor;
 	return float4(result, 1.0f);
 }

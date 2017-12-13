@@ -17,7 +17,7 @@ using namespace Windows::Foundation;
 */
 Sample3DSceneRenderer::Sample3DSceneRenderer(const std::shared_ptr<DX::DeviceResources>& deviceResources) :
 	m_loadingComplete(false),
-	m_degreesPerSecond(40),
+	m_degreesPerSecond(80),
 	m_indexCount(0),
 	m_tracking(false),
 	m_deviceResources(deviceResources)
@@ -58,12 +58,12 @@ void Sample3DSceneRenderer::CreateWindowSizeDependentResources()
 	XMStoreFloat4x4(&m_constantBufferData.projection, XMMatrixTranspose(perspectiveMatrix * orientationMatrix));
 
 	// Eye is at (0,0.7,1.5), looking at point (0,-0.1,0) with the up-vector along the y-axis.
-	static const XMVECTORF32 eye = { 1.5f, 0.0f, 0.0f, 0.0f };
-	static const XMVECTORF32 at = { -1.0f, 0.0f, 0.0f, 0.0f };
+	static const XMVECTORF32 eye = { 1.5f, 0.1f, -1.0f, 0.0f };
+	static const XMVECTORF32 at = { -0.01f, 0.0f, 0.0f, 0.0f };
 	static const XMVECTORF32 up = { 0.0f, 1.0f, 0.0f, 0.0f };
 
 	// Light point at (10.0, 10.0, 50.0)
-	static const XMVECTORF32 light = { 15.0f, 1.0f, -10.0f, 0.0f };
+	static const XMVECTORF32 light = { 2.449f, 0.1f, -1.0f, 0.0f };
 
 	XMStoreFloat4x4(&m_constantBufferData.view, XMMatrixTranspose(XMMatrixLookAtRH(eye, at, up)));
 	XMStoreFloat4(&m_constantBufferData.vec_light, light);
