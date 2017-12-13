@@ -11,7 +11,7 @@ struct int9 { int a, b, c, d, e, f, g, h, i; };
 inline void parseFloat3Line(char* buf, vector<float3>* pStorage)
 {
 	float3 v;
-	sscanf_s(buf, "%f %f %f", &v.x, &v.y, &v.z);
+	sscanf_s(buf, "%f %f %f", &v.x, &v.z, &v.y);
 	pStorage->push_back(v);
 }
 
@@ -50,9 +50,10 @@ inline void copyFloat2toFloatArray(float* pDest, float2 &rhs)
 bool loadMeshDataFromOBJ(const char* filename, MeshData* pMeshData)
 {
 	//create file handle
-	FILE* objFile;
+	FILE* objFile = NULL;
 	char path[255], buf[255];
-
+	memset(path, 0, 255);
+	memset(buf, 0, 255);
 	if (fopen_s(&objFile, filename, "r") != 0)
 	{
 		pMeshData->numIndices = 0;

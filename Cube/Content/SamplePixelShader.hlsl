@@ -18,17 +18,17 @@ struct PixelShaderInput
 float4 main(PixelShaderInput input) : SV_TARGET
 {
 	//Ambient
-	float ambientStrength = 0.3f;	// Сила фонового освітлення
+	float ambientStrength = 0.6f;	// Сила фонового освітлення
 	float3 ambient = ambientStrength * input.lightColor;
 	
 	//Diffuse
 	float3 norm = normalize(input.normal);	//нормаль нормалізована
 	float3 lightDir = normalize(input.light - input.pos1);	//Напрямок світла
 	float diff = max(dot(norm, lightDir), 0.0);	//коефіцієнт освітлення
-	float3 diffuse = diff * input.lightColor;
+	float3 diffuse = 0.5f * diff * input.lightColor;
 
 	//Specular
-	float specularStrength = 0.7f;	//сила відблиску
+	float specularStrength = 0.1f;	//сила відблиску
 	float3 viewDir = normalize(input.viewPos);	//вектор погляду
 	float3 reflectDir = reflect(-lightDir, norm);
 	float spec = pow(max(dot(viewDir, reflectDir), 0.0), 32);	// 32 - ступінь "зібраності" плями відблиску

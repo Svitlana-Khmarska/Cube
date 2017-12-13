@@ -17,7 +17,7 @@ cbuffer ModelViewProjectionConstantBuffer : register(b0)
 struct VertexShaderInput
 {
 	float3 pos : POSITION;
-	float3 uv : UV;
+	float2 uv : UV;
 	float3 normal : NORMAL;
 	float3 bitangent : BITANGENT;
 };
@@ -51,11 +51,15 @@ PixelShaderInput main(VertexShaderInput input)
 	pos = mul(pos, view);
 	pos = mul(pos, projection);
 	output.pos = pos;
-	output.pos1 = float4(0.0f, 0.0f, 0.0f, 1.0f);
+	output.pos1 = pos;
+
+	light = mul(light, model);
+	light = mul(light, view);
+	light = mul(light, projection);
 	output.light = light;
 	output.normal = input.normal;
 	// Pass the color through without modification.
-	output.color = float3(1.0f, 0.5f, 0.31f);	 // Color of cube
+	output.color = float3(1.0f, 1.0f, 1.0f);		// Color of figure
 	output.lightColor = float3(1.0f, 1.0f, 1.0f);	//light color
 	
 	return output;

@@ -21,7 +21,7 @@ namespace Cube
 	struct VertexPositionColor
 	{
 		DirectX::XMFLOAT3 pos;
-		DirectX::XMFLOAT3 uv;
+		DirectX::XMFLOAT2 uv;
 		DirectX::XMFLOAT3 normal;	// Добавили вектор нормалі до вхідних даних шейдера
 		DirectX::XMFLOAT3 bitangent;
 	};
