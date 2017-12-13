@@ -1,0 +1,150 @@
+\hypertarget{class_d_x_1_1_step_timer}{}\section{DX\+:\+:Step\+Timer Class Reference}
+\label{class_d_x_1_1_step_timer}\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+
+
+{\ttfamily \#include $<$Step\+Timer.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_d_x_1_1_step_timer_ae331f005f44c4e057c4bc7f96fe08f49}{Step\+Timer} ()
+\item 
+uint64 \hyperlink{class_d_x_1_1_step_timer_a311e3f7a1c0f1d8697f5aa68cadbc2f1}{Get\+Elapsed\+Ticks} () const
+\item 
+double \hyperlink{class_d_x_1_1_step_timer_a979be5067a77c50e31933ec12ca9b61b}{Get\+Elapsed\+Seconds} () const
+\item 
+uint64 \hyperlink{class_d_x_1_1_step_timer_a499065f09fb33708a1bc0c209d2f4792}{Get\+Total\+Ticks} () const
+\item 
+double \hyperlink{class_d_x_1_1_step_timer_a2c052574806156bdd31e88a31ef5f10f}{Get\+Total\+Seconds} () const
+\item 
+uint32 \hyperlink{class_d_x_1_1_step_timer_a0d20e64dea2ffd6cbe18fe84a62e7d44}{Get\+Frame\+Count} () const
+\item 
+uint32 \hyperlink{class_d_x_1_1_step_timer_a20dd186f3f67a26515bffca9081ff1dc}{Get\+Frames\+Per\+Second} () const
+\item 
+void \hyperlink{class_d_x_1_1_step_timer_ab108c5203686e605af494a4ebe39cb56}{Set\+Fixed\+Time\+Step} (bool is\+Fixed\+Timestep)
+\item 
+void \hyperlink{class_d_x_1_1_step_timer_ae026efbd3f030937bd5bd2d0326d825e}{Set\+Target\+Elapsed\+Ticks} (uint64 target\+Elapsed)
+\item 
+void \hyperlink{class_d_x_1_1_step_timer_a7487a7841823805904a548e3fa37cef2}{Set\+Target\+Elapsed\+Seconds} (double target\+Elapsed)
+\item 
+void \hyperlink{class_d_x_1_1_step_timer_ab07d4b15dec4b2ef390a359aeaad24fd}{Reset\+Elapsed\+Time} ()
+\item 
+{\footnotesize template$<$typename T\+Update $>$ }\\void \hyperlink{class_d_x_1_1_step_timer_a758b88f80e00fabee7167885476681ee}{Tick} (const T\+Update \&update)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \hyperlink{class_d_x_1_1_step_timer_a59a20b9b3294d930299991c62703b0d0}{Ticks\+To\+Seconds} (uint64 ticks)
+\item 
+static uint64 \hyperlink{class_d_x_1_1_step_timer_af6a26dd87202d9eeb167cc0b6e3c1a56}{Seconds\+To\+Ticks} (double seconds)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const uint64 \hyperlink{class_d_x_1_1_step_timer_aa671440c6c8008bd407ae889f5fb9f87}{Ticks\+Per\+Second} = 10000000
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_ae331f005f44c4e057c4bc7f96fe08f49}\label{class_d_x_1_1_step_timer_ae331f005f44c4e057c4bc7f96fe08f49}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Step\+Timer@{Step\+Timer}}
+\index{Step\+Timer@{Step\+Timer}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Step\+Timer()}{StepTimer()}}
+{\footnotesize\ttfamily D\+X\+::\+Step\+Timer\+::\+Step\+Timer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a979be5067a77c50e31933ec12ca9b61b}\label{class_d_x_1_1_step_timer_a979be5067a77c50e31933ec12ca9b61b}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Elapsed\+Seconds@{Get\+Elapsed\+Seconds}}
+\index{Get\+Elapsed\+Seconds@{Get\+Elapsed\+Seconds}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Elapsed\+Seconds()}{GetElapsedSeconds()}}
+{\footnotesize\ttfamily double D\+X\+::\+Step\+Timer\+::\+Get\+Elapsed\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a311e3f7a1c0f1d8697f5aa68cadbc2f1}\label{class_d_x_1_1_step_timer_a311e3f7a1c0f1d8697f5aa68cadbc2f1}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Elapsed\+Ticks@{Get\+Elapsed\+Ticks}}
+\index{Get\+Elapsed\+Ticks@{Get\+Elapsed\+Ticks}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Elapsed\+Ticks()}{GetElapsedTicks()}}
+{\footnotesize\ttfamily uint64 D\+X\+::\+Step\+Timer\+::\+Get\+Elapsed\+Ticks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a0d20e64dea2ffd6cbe18fe84a62e7d44}\label{class_d_x_1_1_step_timer_a0d20e64dea2ffd6cbe18fe84a62e7d44}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Frame\+Count@{Get\+Frame\+Count}}
+\index{Get\+Frame\+Count@{Get\+Frame\+Count}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Frame\+Count()}{GetFrameCount()}}
+{\footnotesize\ttfamily uint32 D\+X\+::\+Step\+Timer\+::\+Get\+Frame\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a20dd186f3f67a26515bffca9081ff1dc}\label{class_d_x_1_1_step_timer_a20dd186f3f67a26515bffca9081ff1dc}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Frames\+Per\+Second@{Get\+Frames\+Per\+Second}}
+\index{Get\+Frames\+Per\+Second@{Get\+Frames\+Per\+Second}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Frames\+Per\+Second()}{GetFramesPerSecond()}}
+{\footnotesize\ttfamily uint32 D\+X\+::\+Step\+Timer\+::\+Get\+Frames\+Per\+Second (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a2c052574806156bdd31e88a31ef5f10f}\label{class_d_x_1_1_step_timer_a2c052574806156bdd31e88a31ef5f10f}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Total\+Seconds@{Get\+Total\+Seconds}}
+\index{Get\+Total\+Seconds@{Get\+Total\+Seconds}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Total\+Seconds()}{GetTotalSeconds()}}
+{\footnotesize\ttfamily double D\+X\+::\+Step\+Timer\+::\+Get\+Total\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a499065f09fb33708a1bc0c209d2f4792}\label{class_d_x_1_1_step_timer_a499065f09fb33708a1bc0c209d2f4792}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Get\+Total\+Ticks@{Get\+Total\+Ticks}}
+\index{Get\+Total\+Ticks@{Get\+Total\+Ticks}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Get\+Total\+Ticks()}{GetTotalTicks()}}
+{\footnotesize\ttfamily uint64 D\+X\+::\+Step\+Timer\+::\+Get\+Total\+Ticks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_ab07d4b15dec4b2ef390a359aeaad24fd}\label{class_d_x_1_1_step_timer_ab07d4b15dec4b2ef390a359aeaad24fd}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Reset\+Elapsed\+Time@{Reset\+Elapsed\+Time}}
+\index{Reset\+Elapsed\+Time@{Reset\+Elapsed\+Time}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Reset\+Elapsed\+Time()}{ResetElapsedTime()}}
+{\footnotesize\ttfamily void D\+X\+::\+Step\+Timer\+::\+Reset\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_af6a26dd87202d9eeb167cc0b6e3c1a56}\label{class_d_x_1_1_step_timer_af6a26dd87202d9eeb167cc0b6e3c1a56}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Seconds\+To\+Ticks@{Seconds\+To\+Ticks}}
+\index{Seconds\+To\+Ticks@{Seconds\+To\+Ticks}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Seconds\+To\+Ticks()}{SecondsToTicks()}}
+{\footnotesize\ttfamily static uint64 D\+X\+::\+Step\+Timer\+::\+Seconds\+To\+Ticks (\begin{DoxyParamCaption}\item[{double}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_ab108c5203686e605af494a4ebe39cb56}\label{class_d_x_1_1_step_timer_ab108c5203686e605af494a4ebe39cb56}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Set\+Fixed\+Time\+Step@{Set\+Fixed\+Time\+Step}}
+\index{Set\+Fixed\+Time\+Step@{Set\+Fixed\+Time\+Step}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Set\+Fixed\+Time\+Step()}{SetFixedTimeStep()}}
+{\footnotesize\ttfamily void D\+X\+::\+Step\+Timer\+::\+Set\+Fixed\+Time\+Step (\begin{DoxyParamCaption}\item[{bool}]{is\+Fixed\+Timestep }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a7487a7841823805904a548e3fa37cef2}\label{class_d_x_1_1_step_timer_a7487a7841823805904a548e3fa37cef2}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Set\+Target\+Elapsed\+Seconds@{Set\+Target\+Elapsed\+Seconds}}
+\index{Set\+Target\+Elapsed\+Seconds@{Set\+Target\+Elapsed\+Seconds}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Set\+Target\+Elapsed\+Seconds()}{SetTargetElapsedSeconds()}}
+{\footnotesize\ttfamily void D\+X\+::\+Step\+Timer\+::\+Set\+Target\+Elapsed\+Seconds (\begin{DoxyParamCaption}\item[{double}]{target\+Elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_ae026efbd3f030937bd5bd2d0326d825e}\label{class_d_x_1_1_step_timer_ae026efbd3f030937bd5bd2d0326d825e}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Set\+Target\+Elapsed\+Ticks@{Set\+Target\+Elapsed\+Ticks}}
+\index{Set\+Target\+Elapsed\+Ticks@{Set\+Target\+Elapsed\+Ticks}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Set\+Target\+Elapsed\+Ticks()}{SetTargetElapsedTicks()}}
+{\footnotesize\ttfamily void D\+X\+::\+Step\+Timer\+::\+Set\+Target\+Elapsed\+Ticks (\begin{DoxyParamCaption}\item[{uint64}]{target\+Elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a758b88f80e00fabee7167885476681ee}\label{class_d_x_1_1_step_timer_a758b88f80e00fabee7167885476681ee}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Tick@{Tick}}
+\index{Tick@{Tick}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Tick()}{Tick()}}
+{\footnotesize\ttfamily template$<$typename T\+Update $>$ \\
+void D\+X\+::\+Step\+Timer\+::\+Tick (\begin{DoxyParamCaption}\item[{const T\+Update \&}]{update }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_a59a20b9b3294d930299991c62703b0d0}\label{class_d_x_1_1_step_timer_a59a20b9b3294d930299991c62703b0d0}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Ticks\+To\+Seconds@{Ticks\+To\+Seconds}}
+\index{Ticks\+To\+Seconds@{Ticks\+To\+Seconds}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Ticks\+To\+Seconds()}{TicksToSeconds()}}
+{\footnotesize\ttfamily static double D\+X\+::\+Step\+Timer\+::\+Ticks\+To\+Seconds (\begin{DoxyParamCaption}\item[{uint64}]{ticks }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_d_x_1_1_step_timer_aa671440c6c8008bd407ae889f5fb9f87}\label{class_d_x_1_1_step_timer_aa671440c6c8008bd407ae889f5fb9f87}} 
+\index{D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}!Ticks\+Per\+Second@{Ticks\+Per\+Second}}
+\index{Ticks\+Per\+Second@{Ticks\+Per\+Second}!D\+X\+::\+Step\+Timer@{D\+X\+::\+Step\+Timer}}
+\subsubsection{\texorpdfstring{Ticks\+Per\+Second}{TicksPerSecond}}
+{\footnotesize\ttfamily const uint64 D\+X\+::\+Step\+Timer\+::\+Ticks\+Per\+Second = 10000000\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Common/\hyperlink{_step_timer_8h}{Step\+Timer.\+h}\end{DoxyCompactItemize}

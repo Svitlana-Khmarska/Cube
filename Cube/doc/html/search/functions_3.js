@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['getbackbufferrendertargetview',['GetBackBufferRenderTargetView',['../class_d_x_1_1_device_resources.html#ac76b0cfbc12336b39122878c0b875af7',1,'DX::DeviceResources']]],
+  ['getd2ddevice',['GetD2DDevice',['../class_d_x_1_1_device_resources.html#a95a773d012e00d4fc6c62ee8b09324a9',1,'DX::DeviceResources']]],
+  ['getd2ddevicecontext',['GetD2DDeviceContext',['../class_d_x_1_1_device_resources.html#a214cafc8d9a6b7bad7394c2a2270aff6',1,'DX::DeviceResources']]],
+  ['getd2dfactory',['GetD2DFactory',['../class_d_x_1_1_device_resources.html#a5ccb7b47646cb49a58051ef6b0b90614',1,'DX::DeviceResources']]],
+  ['getd2dtargetbitmap',['GetD2DTargetBitmap',['../class_d_x_1_1_device_resources.html#a249227733502bf12f78c2e43875583ee',1,'DX::DeviceResources']]],
+  ['getd3ddevice',['GetD3DDevice',['../class_d_x_1_1_device_resources.html#aff06b3dbc3a678c38973d9b14cab98b4',1,'DX::DeviceResources']]],
+  ['getd3ddevicecontext',['GetD3DDeviceContext',['../class_d_x_1_1_device_resources.html#a5e9140bef766802bc08d79c1a2f422ca',1,'DX::DeviceResources']]],
+  ['getdepthstencilview',['GetDepthStencilView',['../class_d_x_1_1_device_resources.html#a1d9c271bdc8163ee77a175e305fbfb88',1,'DX::DeviceResources']]],
+  ['getdevicefeaturelevel',['GetDeviceFeatureLevel',['../class_d_x_1_1_device_resources.html#a2fcb785972e693d3d8cb711a09cb9f1e',1,'DX::DeviceResources']]],
+  ['getdpi',['GetDpi',['../class_d_x_1_1_device_resources.html#af313814dc56d14afe8b1a02ba10d462d',1,'DX::DeviceResources']]],
+  ['getdwritefactory',['GetDWriteFactory',['../class_d_x_1_1_device_resources.html#a12dd3a477131220352b1ade8808d5704',1,'DX::DeviceResources']]],
+  ['getelapsedseconds',['GetElapsedSeconds',['../class_d_x_1_1_step_timer.html#a979be5067a77c50e31933ec12ca9b61b',1,'DX::StepTimer']]],
+  ['getelapsedticks',['GetElapsedTicks',['../class_d_x_1_1_step_timer.html#a311e3f7a1c0f1d8697f5aa68cadbc2f1',1,'DX::StepTimer']]],
+  ['getframecount',['GetFrameCount',['../class_d_x_1_1_step_timer.html#a0d20e64dea2ffd6cbe18fe84a62e7d44',1,'DX::StepTimer']]],
+  ['getframespersecond',['GetFramesPerSecond',['../class_d_x_1_1_step_timer.html#a20dd186f3f67a26515bffca9081ff1dc',1,'DX::StepTimer']]],
+  ['getlogicalsize',['GetLogicalSize',['../class_d_x_1_1_device_resources.html#a2cf3895fe7f74f4b268d8478da492001',1,'DX::DeviceResources']]],
+  ['getorientationtransform2d',['GetOrientationTransform2D',['../class_d_x_1_1_device_resources.html#a428f59800d7616836359026496d901f9',1,'DX::DeviceResources']]],
+  ['getorientationtransform3d',['GetOrientationTransform3D',['../class_d_x_1_1_device_resources.html#aaedd593f914988c1aee0712ada59032b',1,'DX::DeviceResources']]],
+  ['getoutputsize',['GetOutputSize',['../class_d_x_1_1_device_resources.html#a098dec113d2c7614c1be33f6db3c2372',1,'DX::DeviceResources']]],
+  ['getscreenviewport',['GetScreenViewport',['../class_d_x_1_1_device_resources.html#aaaadbe1b6ab02879f493914d4440c0c6',1,'DX::DeviceResources']]],
+  ['getswapchain',['GetSwapChain',['../class_d_x_1_1_device_resources.html#a5e27287ddca8d021c5ccefd46e440bea',1,'DX::DeviceResources']]],
+  ['gettotalseconds',['GetTotalSeconds',['../class_d_x_1_1_step_timer.html#a2c052574806156bdd31e88a31ef5f10f',1,'DX::StepTimer']]],
+  ['gettotalticks',['GetTotalTicks',['../class_d_x_1_1_step_timer.html#a499065f09fb33708a1bc0c209d2f4792',1,'DX::StepTimer']]],
+  ['getwicimagingfactory',['GetWicImagingFactory',['../class_d_x_1_1_device_resources.html#a1f299821812c1943c0230903e0500e39',1,'DX::DeviceResources']]]
+];
